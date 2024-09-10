@@ -11,7 +11,10 @@ export class ColorPickerComponent implements OnInit {
   selectedColor : string;
 
   ngOnInit(): void {
+    this.selectedColor = this.initialColor;
   }
 
-
+  changeColor(color: string):void {
+    this.selectedColor = color;
+  }
 }
